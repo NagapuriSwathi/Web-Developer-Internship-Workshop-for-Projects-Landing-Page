@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assests/Images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>iLearnings | WORKSHOP FOR PROJECTS</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./assests/Images/logo.png" alt="iLearnings Logo">
+        </div>
+
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>   
+            
+            <nav>
+                <menu class="nav-menu-small">
+                    <li><a href="#">Corporate Training</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#" class="sign-up">Sign Up</a></li>
+                </menu>
+            </nav>
+        </div>
+
+        <nav>
+            <menu class="nav-menu">
+                <li><a href="#">Corporate Training</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blog</a></li> <span class="line"></span>
+                <li><a href="#">Login</a></li>
+                <li><a href="#" class="sign-up">Sign Up</a></li>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <div class="main-heading">
+                <img src="./assests/Images/python-logo.png" alt="">
+                <h1>Python Workshop</h1>
+            </div>
+            <div class="flex-container">
+                <div class="flex-col-1">
+                    <img src="./assests/Images/landing-page-image.png" alt="Illustration">
+                </div>
+                <div class="flex-col-2">
+                    <h2>Free Workshop on Python Programming</h2>
+                    <h4>Start Coding - Unlock Your Potential</h4>
+                    <ul>
+                        <li>Join our Python workshop and learn the concepts of python with hands-on exercies and engage in practical projects.</li> 
+                        <li>Get a certificate of completion</li> 
+                        <li>Access to ongoing support and resources and continue your Python journey.</li>
+                    </ul>
+                    <h4>Eroll Now - Boost your resume with the on-demand skills</h4>
+                    <button class="btn">Register Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="workshop-details">
+            <div class="flex-container workshop-info">
+                <div>
+                    <h2>Machine Learning with Scikit Learn Decoded</h2>
+                    <p>&#128272; 16 Registered</p>
+                </div>
+                <div>
+                    <p>
+                        &#128197; <time datetime="29-07 19:00">July 27 <span>|</span> 7:00 PM (IST)</time>
+                        <button type="button" class="btn">Register Now</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex-container workshop-description">
+                <div>
+                    <h4>DESCRIPTION</h4>
+                    <p>This iLearnings Workshop on 'Python' will help you understand the various concepts you must learn in Python with examples.</p>
+                    <h4>AGENDA</h4>
+                    <ul>
+                        <li>Introduction to Python</li>
+                        <li>What is Python?</li>
+                        <li>Features of Python</li>
+                        <li>Who uses Python?</li>
+                        <li>Starting off with Python Basics</li>
+                        <li>Data Types</li>
+                        <li>Operators</li>
+                        <li>Flow Control</li>
+                        <li>Functions</li>
+                        <li>File Handling</li>
+                        <li>Hands-On</li>
+                    </ul>
+                </div>
+
+                <div class="registration-form">
+                    <form action="">
+                        <h4><span>&#128640;</span>RESERVE YOUR SPOT NOW</h4>
+                        <label for="email-id"> Email * <br />
+                            <input type="email" placeholder="example@gmail.com" id="email-id" name="email-id" required />
+                        </label>
+
+                        <br />
+
+                        <label for="experience"> Years of experience *  <br />
+                            <select name="experience" id="experience" required>
+                                <option value="">Please Select</option>
+                                <option value="0-2 Years">0-2 Years</option>
+                                <option value="2-5 Years">2-5 Years</option>
+                                <option value="5-10 Years">5--10 Years</option>
+                                <option value="10+ Years">10+ Years</option>
+                            </select>
+                        </label>
+
+                        <br />
+
+                        <label for="phone"> Phone Number *  <br />
+                            <input type="tel" id="phone" name="phone" required />
+                        </label>
+
+                        <br />
+
+                        <label for="updates"> 
+                            <input type="checkbox" id="updates" name="updates" required />
+                            Receive Regular Updates
+                        </label>
+
+                        <input type="submit" class="btn" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="workshop-facts">
+                <h4>Workshop Facts</h4>
+                <ul>
+                    <li>Python is the preferred language for new technologies such as Data Science and Machine Learning.</li>
+                    <li>TIOBE index says,'Python is one of the most popular programming languages in the world'</li>
+                </ul>
+            </div>
+
+            <div class="join-us">
+                <h4>JOIN OUR MEETUP COMMUNITY</h4>
+                    <ul>
+                        <li>Get updates on latest technology like AI , DevOps, Cloud, Blockchain etc.</li>
+                        <li>Exclusive access to curated and personalized content from iLearnings</li>
+                        <li>Win huge and exclusive discounts on all courses of iLearnings</li>
+                    </ul>
+                    <button type="button" class="btn">Join Now</button>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="logo-1">
+                <img src="./assests/Images/logo.png" alt="iLearnings Logo">
+            </div>
+            
+            <div class="flex-container">
+                <div class="courses-offered">
+                    <h4> TRENDING CERTIFICATION COURSES</h4>
+                    <ul>
+                        <li><a href="#">Salesforce</a></li>
+                        <li><a href="#">AI &amp; Machine Learning</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Data Analytics</a></li>
+                        <li><a href="#">Azure</a></li>
+                        <li><a href="#">Cyber Security</a></li>
+                        <li><a href="#">Software Development</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Graphic Desig</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+    
+                <div class="trending-courses">
+                    <h4>TRENDING MASTER COURSES</h4>
+                    <ul>
+                        <li><a href="#">Salesforce BA</a></li>
+                        <li><a href="#">Foundations of Artificial Intelligence</a></li>
+                        <li><a href="#">Python Basics : Learn to Code</a></li>
+                        <li><a href="#">Data Science Fundamentals</a></li>
+                        <li><a href="#">Data Analytics Essentials</a></li>
+                        <li><a href="#">Azure Fundamentals</a></li>
+                        <li><a href="#">Cyber Security Fundamentals</a></li>
+                        <li><a href="#">Software Development Fundamentals</a></li>
+                        <li><a href="#">Web Development Fundamentals</li></a>
+                        <li><a href="#">Graphic Desig Fundamentals</li></a>
+                        <li><a href="#">Digital Marketing Fundamentals</li></a>
+                    </ul>
+                </div>
+    
+                <div class="company">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">News & Media</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Blog Sitemap</a></li>
+                        <li><a href="#">Community Sitemap</a></li>
+                        <li><a href="#">City Sitemap</a></li>
+                        <li><a href="#">Corporate Trainig</a></li>
+                    </ul>
+    
+                </div>
+    
+                <div class="work-with-us">
+                    <h4>WORK WITH US</h4>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Become an Instructor</a></li>
+                        <li><a href="#">Become an Affliate</a></li>
+                        <li><a href="#">Become a Partner</a></li>
+                        <li><a href="#">Hire from iLearnings</a></li>
+                    </ul>
+                    <div>
+                        <h5>DOWNLOAD APP</h5>
+                        <img src="./assests/Images/app-store-download.png" alt="Get the Application on App Store">
+                        <img src="./assests/Images/google-playstore-download.png" alt="Get the Application on Play Store">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="copy-right" class="flex-container">
+        <p>&copy; 2024 All rights Reserved.</p>
+        <ul class="flex-container">
+            <li><a href="#">Terms & Conditions</li></a>
+            <li><a href="#">Legal & Privacy</li></a>
+        </ul>
+        <ul class="flex-container social-media-links">
+            <li><a href="#"><img src="./assests/Images/facebook-logo.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="./assests/Images/instagram-logo.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="./assests/Images/linkedIn-logo.png" alt="LinkedIn"></a></li>
+            <li><a href="#"><img src="./assests/Images/whatsapp-logo.png" alt="Whatsapp"></a></li>
+            <li><a href="#"><img src="./assests/Images/mail-logo.png" alt="E-Mail"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
