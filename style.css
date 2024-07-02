@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color : #AE00FF;
+    --secondary-color : #D0E07F;
+    --teritiary-color : #8BC83C;
+    --quaternary-color: #EC3A12;
+    --section-padding : 6rem;
+}
+
+html{
+    font-size: 62.5%;
+    user-select: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+main{
+    margin-top: 7.46rem;
+}
+
+section{
+    padding: var(--section-padding);
+}
+
+section:nth-child(even){
+    box-shadow: 0rem 0rem 4rem 0.1rem #1B571B inset;
+}
+
+section:nth-child(odd){
+    box-shadow: 0rem 0rem 4rem 0.1rem #ec3a12 inset;
+}
+
+li{
+    list-style-type: none;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+label,input, select{
+    font-family: "Poppins",serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+input, select{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #00000013;
+    padding: 1.2rem;
+    border-radius: 0.2rem;
+    margin: 2rem 0;
+    font-weight: normal;
+}
+
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 1rem;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--quaternary-color);
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+}
+
+/* Header Styles Start*/
+
+header{
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .hamburger{
+    display: none;
+}
+
+
+header .hamburger div{
+    width: 4rem;
+    height: 0.6rem;
+    background-color: #FFFFFF;
+    margin: 0.6rem 0;
+    border-radius: 2rem;
+}
+
+.nav-menu-small{
+    display: none;
+}
+
+header #logo img{
+    width : 6rem;
+    margin: 1rem 0;
+    margin-left: 6rem;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-menu li{
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.nav-menu li:last-child{
+    margin-right: 6rem;
+}
+
+.nav-menu li a{
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+
+.nav-menu li:hover a{
+    color: #FFFFFF;
+}
+
+.nav-menu .line{
+    display: inline-block;
+    width: 2px;
+    height: 4rem;
+    background-color: var(--secondary-color);
+    margin: auto;
+}
+
+.nav-menu .sign-up{
+     background-image: radial-gradient(#4E1378, transparent);
+     padding: 1.2rem;
+     color: #FFFFFF;
+     border-radius: 0.8rem;
+}
+
+/* Header Styles End*/
+
+
+/* Banner Styles Start */
+
+#banner .main-heading{
+    display: flex;
+    gap: 1rem;
+}
+
+#banner .main-heading img{
+    width: 6rem;
+    margin-bottom: 4rem;
+}
+
+#banner .main-heading h1{
+    flex-shrink: 0;
+    color: var(--primary-color);
+}
+
+#banner .flex-col-1 img{
+    max-width: 100%;
+}
+
+#banner .flex-col-2{
+    line-height: 4rem;
+}
+
+#banner .flex-col-2 h2{
+    font-weight: 900;
+    margin-bottom: 0.4rem;
+    color: var(--quaternary-color);
+}
+
+#banner .flex-col-2 ul li{
+    font-size: 1.4rem;
+    font-weight: 600;
+    list-style-type: "\01F3AF";
+    list-style-position: inside;
+}
+
+/* Banner Styles End */
+
+
+/* Workshop Details Section Styles Start */
+
+
+#workshop-details .workshop-info{
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+
+.workshop-description{
+    align-items: flex-start;
+}
+
+.workshop-description div{
+    flex-basis: 100%;
+}
+
+.workshop-description div h4{
+    margin: 1.4rem 0;
+}
+
+.workshop-description ul li{
+    margin: 0.4rem 0;
+    list-style-type: "\1F4CC";
+    list-style-position: inside;
+}
+
+.registration-form form{
+    box-shadow: 0rem 0rem 1rem 1rem #8080804a inset;
+    padding: 4rem;
+}
+
+.registration-form form h4{
+    margin-bottom: 3rem;
+}
+
+.registration-form form h4 span{
+    margin-right: 1.2rem;
+}
+
+.workshop-facts ul {
+    width: 80%;
+    border: 2px dashed var(--teritiary-color);
+    margin: 2rem 0;
+}
+
+.workshop-facts ul li{
+    list-style-type: "\1F4DA";
+    list-style-position: inside;
+    padding: 0rem 4rem;
+    margin: 2rem 0;
+}
+
+.join-us {
+    box-shadow: 0rem 0rem 1rem 1rem #00000011;
+    padding: 3rem 6rem;
+    margin-top: 6rem;
+}
+
+
+.join-us ul li{
+    list-style-type: "\1F4E2";
+    list-style-position: inside;
+    padding: 0rem 4rem;
+    margin: 2rem 0;
+}
+
+/* Workshop Details Section Styles End */
+
+
+/* Services Section Styles Start */
+
+#services .logo-1{
+    margin-bottom: 4rem;
+}
+
+#services img{
+    display: block;
+    max-width: 10rem;
+}
+
+#services .flex-container{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#services .work-with-us div{
+    margin: 0;
+}
+
+#services div ul li{
+    transition: color 0.2s ease-in-out;
+}
+
+#services div ul li a{
+    font-size: 1.4rem;
+    color: var(--quaternary-color);
+    font-weight: 600;
+}
+
+#services div ul li:hover a{
+    color: var(--primary-color);
+}
+
+#services .flex-container div h4{
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--quaternary-color);
+}
+
+#services .flex-container div h5{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+/* Services Section Styles End */
+
+
+/* Footer Styles Start */
+
+#copy-right{
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+}
+
+#copy-right .flex-container{
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+    align-items: center;
+}
+
+#copy-right p, #copy-right .flex-container li a{
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+
+#copy-right ul li img{
+    max-width: 2.4rem;;
+    background-color: #FFFFFF;
+    padding: 0.2rem;
+    border-radius: 0.4rem;
+}
+
+
+/* Footer Styles Start */
+
+
+/* Media Querries */
+
+@media only screen and (max-width:880px){
+
+    html{
+        font-size: 50%; /* 8px */
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .nav-menu .line, .nav-menu li:nth-child(-n+3) a {
+        display: none;
+    }
+
+    #banner .main-heading{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    #workshop-details .workshop-info{
+        align-items: flex-start;
+        margin-bottom: 4rem;
+        gap: 0;
+    }
+
+ 
+    #workshop-details .registration-form{
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    .workshop-facts ul {
+        width: 100%;
+    }
+    
+
+    #services .flex-container{
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #services .flex-container div{
+        flex-basis: 40%;
+    }
+
+    #copy-right{
+        gap: 0;
+    }
+
+    #copy-right .flex-container{
+        flex-direction: row;
+        padding: 0;
+        margin: 2rem 0;
+    }
+
+    #copy-right .social-media-links{
+        margin: 1rem;
+    }
+}
+
+
+@media only screen and (max-width:460px){
+
+    html{
+        font-size: 37.5%;  /* 6px */
+    }
+
+
+    /* Header Styles Start */
+
+    .nav-menu {
+        display: none;
+    }
+
+    header #logo img{
+        width : 6rem;
+        margin: 1rem 2rem;
+    }
+
+    header .hamburger{
+        position: fixed;
+        display: block;
+        right: 4%;
+    }
+
+    header .hamburger:hover div{
+        display: none;
+    }
+
+    .nav-menu-small{
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.3) inset;
+    }
+
+    header .hamburger:hover .nav-menu-small{
+        display: block;
+        position: fixed;
+        height: 100%;
+        top : 0rem;
+        right: 0rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        padding: 3.2rem;
+    }
+
+    .nav-menu-small li a{
+        font-size: 3.2rem;
+        color: #C0FF00;
+        font-weight: 800;
+    }
+
+    .nav-menu-small li:hover a{
+        color: #FFFFFF;
+    }
+
+    /* Header Styles End */
+
+    #services .flex-container{
+        flex-direction: column;
+    }
+
+    #services div{
+        margin-left: 2rem;
+    }
+
+    #services .logo-1 img{
+        margin-left: 2rem;
+    }
+
+}
